@@ -3,6 +3,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	background: rgba(249, 249, 249, 1);
 }
 
 .main {
@@ -250,4 +251,68 @@ body {
 
 .nav-menu li.active span {
 	color: rgba(255, 115, 85, 1);
+}
+
+.app-bar.back {
+	justify-content: left;
+	gap: 20px;
+}
+
+.btn-back {
+	display: flex;
+	align-items: center;
+}
+
+.app-header {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: rgba(255, 115, 85, 1);
+	border-bottom: rgba(255, 115, 85, 1) solid 2px;
+	padding: 15px 0;
+	width: 109px;
+	margin: 0 auto 30px;
+}
+
+.app-questions {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.app-questions div {
+	width: 71px;
+	height: 71px;
+	background-color: rgba(255, 255, 255, 1);
+	box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.05);
+	border-radius: 85px 71px 101px 71px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	margin: 0 15px 25px 0;
+}
+
+.app-questions div:nth-child(3n+4) {
+	margin: 0 0 25px 0;
+}
+
+.app-questions div.active::after {
+	display: block;
+	content: ' ';
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/check-circle.png);
+	position: absolute;
+	top: 0;
+	right: 0px;
 }
